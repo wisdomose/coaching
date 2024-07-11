@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  border: 2px solid red;
+}
+
+.flex__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex__container > div {
+  width: 25%;
+  height: 10vw;
+  background-color: #02323c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: #ffd600;
+  flex-shrink: 0;
+  border: 2px solid white;
+  border-bottom: 1px solid white;
+}
+
+.flex__container > div:nth-child(3){
+    width: 50%;
+} 

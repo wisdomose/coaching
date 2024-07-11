@@ -1,0 +1,48 @@
+@import url("./style.css");
+
+body {
+  padding: 1rem;
+  max-width: 1240px;
+  margin:0 auto;
+}
+
+#grid__container {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 500px;
+}
+
+.content p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.content button {
+  padding: 0.8rem 1.5rem;
+  margin: 1.5rem 0;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--green);
+  color: var(--yellow);
+  cursor: pointer;
+  transition: all 150ms ease;
+  text-transform: capitalize;
+}
+
+.content button:hover {
+  transform: scale(1.05);
+}
+
+.cover {
+  overflow: hidden;
+  position: relative;
+  max-height: 500px;
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
